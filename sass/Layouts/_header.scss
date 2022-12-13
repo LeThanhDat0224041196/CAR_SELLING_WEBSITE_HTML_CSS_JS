@@ -1,0 +1,47 @@
+.header{
+    position: fixed;
+    top: $tlr-1;
+    left: $tlr-1;
+    right: $tlr-1;
+    z-index: 999;
+    background: $color-white-3;
+    display: flex;
+    justify-content: space-between;
+    padding: $fs-24 9%;
+    .logo{
+        font-size: $fs-25;
+        color: $color-dark-14;
+        font-weight: bolder;
+    }
+    span{
+       color: $color-yellow-4; 
+    }
+    .navbar a{
+        font-size: $fs-26;
+        margin: 0 $mg-8; 
+        color: $color-dark-14;
+    }
+    .navbar a:hover{
+        @include Hover($color-yellow-3)
+    }
+    .btn{
+        margin-top: 0;
+    }
+    #login-button i{
+        font-size: $fs-25;
+        color: $color-dark-15;
+        cursor: pointer;
+        display: none;
+    }
+}
+.header.active{
+    box-shadow: $shadow-1;
+    padding: $pd-15 9%;
+}
+
+#menu-button{
+    font-size: $fs-25;
+    color: $color-dark-15;
+    cursor: pointer;
+    display: none;
+}

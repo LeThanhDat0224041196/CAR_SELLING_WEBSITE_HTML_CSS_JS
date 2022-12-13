@@ -1,0 +1,192 @@
+//color white
+$color-white-1: #f5f9fe;
+$color-white-2: #e2ebfc;
+$color-white-3: #fff;
+$color-white-4: #f3f4f6;
+$color-white-5: #edfff1;
+$color-white-6: #eee;
+
+//  yellow color
+$color-yellow-1: #f9d412;
+$color-yellow-2: #FF8C00;
+$color-yellow-3: #f9d806;
+$color-yellow-4: #ffee80;
+
+// red color
+$color-red-1: #ee1c47;
+
+// green color
+$color-green-1: #27b737;
+
+//dark color
+$color-dark-1: #656774 ;
+$color-dark-2:#121212;
+$color-dark-3:#353536;
+$color-dark-4:#212121;
+$color-dark-5: #2c2c2c;
+$color-dark-6: #000;
+$color-dark-7: #333c56;
+$color-dark-8: #111;
+$color-dark-9: #151515;
+$color-dark-10: #707070;
+$color-dark-11: #565656;
+$color-dark-12: #636872;
+$color-dark-13: #212529;
+
+$color-dark-14: #130f40;
+$color-dark-15: #666;
+
+
+// blue color
+$color-blue-1: #1d365e;
+$color-blue-2: #2a73dd;
+$color-blue-3: #c9d8f4;
+$color-blue-4:#2196f3;
+$color-blue-5: #333c56;
+
+// gap
+$gap-1: 1rem;
+$gap-2: 1.5rem;
+
+// box-shadow
+$shadow-1: 0 .5rem 1rem rgba(0,0,0,.1);
+
+
+// border-color
+$bdr-color-1: .1rem solid rgba(0,0,0,.1);
+
+
+
+// height
+$height-1: 100vh;
+$height-2: 25px;
+$height-3: 300rem;
+$height-4: 100%;
+$height-5: 5rem;
+$height-6: 6rem;
+
+//font size
+$fs-1: 14px;
+$fs-2: 1.1rem;
+$fs-3: 1.8rem;
+$fs-4: 70px;
+$fs-5: 1.6rem;
+$fs-6: 2.25rem;
+$fs-7: 20px;
+$fs-8: 44px;
+$fs-9: 16px;
+$fs-10: 25px;
+$fs-11: 35px;
+$fs-12: 16px;
+$fs-13: 65px;
+$fs-14: 12px;
+$fs-15: 30px;
+$fs-16: 28px;
+$fs-17: 2rem;
+$fs-18: 13px;
+$fs-19: 18px;
+$fs-20: 10px;
+$fs-21: 22px;
+$fs-22: 1rem;
+$fs-23: 15px;
+$fs-24: 3rem;
+$fs-25: 2.5rem;
+$fs-26: 1.7rem;
+$fs-27: 1.5rem;
+$fs-28: 5rem;
+$fs-29: 7.5vw;
+
+
+
+//font weight
+$fw-1: 400;
+$fw-2: 500;
+$fw-3: 600;
+$fw-4: 700;
+
+//letter spacing
+$ls-1: 0.015rem;
+$ls-2: 0.03rem;
+
+//Padding
+$pd-1: 25px;
+$pd-2: 225px;
+$pd-3: 12px;
+$pd-4: 44px;
+$pd-5: 100px;
+$pd-6: 8px;
+$pd-7: 60px;
+$pd-8: 150px;
+$pd-9: 20px;
+$pd-10: 10px;
+$pd-11: 25px;
+$pd-12: 3px;
+$pd-13: .8rem;
+$pd-14: 3rem;
+$pd-15: 2rem;
+$pd-16: 1rem;
+$pd-17: 1.2rem;
+$pd-18: 10rem;
+$pd-19: 5rem;
+
+
+
+//Margin
+$mg-0: 0;
+$mg-1: 30px;
+$mg-2: 25px;
+$mg-3: 70px;
+$mg-4: 60px;
+$mg-5: 20px;
+$mg-6: 6px;
+$mg-7: 10px;
+$mg-8: 1rem;
+$mg-9: 2rem;
+$mg-10: .5rem;
+$mg-11: .7rem;
+
+//border
+$bd-1: 2px;
+$bd-2: 8px;
+$bd-3: .5rem;
+
+// width
+$wthd-1: 120px;
+$wthd-2: 100%;
+$wthd-3: 380px;
+$wthd-4: 490px;
+$wthd-5: 140px;
+$wthd-6: 40rem;
+$wthd-7: 5rem;
+$wthd-8: 6rem;
+
+// Line-height
+$l-height-1: 5rem;
+$l-height-2: 6rem;
+
+// radius
+$radius-1: 50px;
+$radius-2: 5px;
+$radius-3: .5rem;
+$radius-4: 50%;
+
+// Top-Left-Right
+$tlr-1: 0;
+$tlr-2: 1.5rem;
+$tlr-3: 2.5rem;
+$tlr-4: 105%;
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+    "x-small": 451px,
+    "extra-large-down": 1199.98px,
+    "large-down": 991.98px,
+    "medium-down": 767.98px,
+    "small-down": 575.98px,
+    "x-small-down": 450px,
+    
+);

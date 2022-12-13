@@ -1,0 +1,14 @@
+.btn{
+    display: inline-block;
+    margin-top: $mg-8;
+    border-radius: $radius-3;
+    color: $color-dark-14;
+    background: $color-yellow-4;
+    font-weight: $fw-2;
+    font-size: $fs-26;
+    cursor: pointer;
+    padding: $pd-13 $pd-14;
+}
+.btn:hover{
+        background: $color-yellow-3;
+}

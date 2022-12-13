@@ -1,0 +1,55 @@
+@mixin styleText($fs,$fw,$color) {
+    font-size:$fs ;
+    font-weight:$fw ;
+    color:$color ;
+}
+
+@mixin style-Text($fs, $color) {
+    font-size:$fs;
+    color:$color;
+}
+
+@mixin styleButton($bg,$pd-y,$pd-x,$pd-z,$pd-o,$bd, $radius,$ls) {
+    background: $bg;
+    padding: $pd-y $pd-x $pd-z $pd-o;
+    border: $bd;
+    border-radius: $radius;
+    letter-spacing: $ls;
+}
+
+@mixin style-Button($pd-y,$pd-x,$bd, $radius) {
+    padding: $pd-y $pd-x;
+    border: $bd; 
+    border-radius: $radius;
+}
+
+@mixin styleButtonHover($bg,$bd-color,$color) {
+    background: $bg;
+    border-color: $bd-color;
+    color: $color;
+}
+
+@mixin styleButton-Hover($bg,$color) {
+    background: $bg;
+    color: $color;
+}
+
+@mixin backgroundColor($bg){
+    background: $bg;
+}
+
+@mixin Hover($color) {
+    color: $color ;
+}
+
+@mixin responsive($screen) {   
+    @if(map-has-key($map:$breakpoints , $key:$screen )){      
+        $value: map-get($map:$breakpoints , $key:$screen );       
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{       
+        @warn "màn hình chưa khai báo";
+    }
+}

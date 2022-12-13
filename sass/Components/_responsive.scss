@@ -1,0 +1,55 @@
+// Responsive
+@include responsive("large-down"){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: $pd-15;
+    }
+    .header.active{
+        // box-shadow: $shadow-1;
+        padding: $pd-15;
+    }
+
+    section{
+        padding: $pd-15;
+    }
+}
+@include responsive("medium"){
+    #menu-button{
+        display: block;
+    }
+    #menu-button.fa-times{
+        transform: rotate(180deg);
+    }
+    .header #login-button i{
+        display: block;
+    }
+    .header #login-button .btn{
+        display: none;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        right: $tlr-1;
+        left: $tlr-1;
+        background: $color-white-3;
+        border-top: $bdr-color-1;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: $mg-9;
+        font-size: $fs-17;
+    }
+}
+@include responsive("x-small-down"){
+    html{
+        font-size: 50%;
+    }
+}

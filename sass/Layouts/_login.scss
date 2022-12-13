@@ -1,0 +1,66 @@
+.login-form-container{
+    position: fixed;
+    top: -$tlr-4;
+    left: $tlr-1;
+    height: $height-4;
+    width: $height-4;
+    background: rgba(255,255,255,.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    form{
+        padding: $pd-15;
+        margin: $mg-9;
+        border: $bdr-color-1;
+        border-radius: $bd-3;
+        box-shadow: $shadow-1;
+        background: $color-white-3;
+        text-align: center;
+        width: $wthd-6;
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: $gap-1;
+        }
+        .btn{
+            display: block;
+            width: $wthd-2;
+            margin: $mg-10 $mg-0;
+        }
+        h3{
+            text-transform: uppercase;
+            padding-bottom: $pd-16;
+            @include style-Text($fs-25, $color-dark-14);
+        }
+        .box{
+            margin: $mg-11 $mg-0;
+            width: $wthd-2;
+            text-transform: none;
+            padding: $pd-16 $pd-17;
+            border: $bdr-color-1;
+            border-radius: $radius-3;
+            @include style-Text($fs-5, $color-dark-14)
+        }
+        p{
+            padding: $pd-16 0;
+            @include style-Text($fs-27, $color-dark-15);
+            a{
+                text-decoration: underline;
+                color: $color-yellow-3;
+            }
+        }
+    }
+    #close-login-form{
+        position: absolute;
+        cursor: pointer;
+        top: $tlr-2;
+        right: $tlr-3;
+        @include style-Text($fs-28, $color-dark-15)
+    }
+}
+.login-form-container.active{
+    top: $tlr-1;
+    opacity: 1;
+}

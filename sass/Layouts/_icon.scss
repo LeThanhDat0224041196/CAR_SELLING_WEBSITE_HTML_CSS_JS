@@ -1,0 +1,45 @@
+.icons-container{
+    padding-top: $pd-19;
+    padding-bottom: $pd-19;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: $gap-2;
+    background: $color-white-6;
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: $gap-2;
+        padding: $pd-15;
+        background: $color-white-3;
+        box-shadow: $shadow-1;
+        border-radius: $radius-3;
+        i{
+            height: $height-5;
+            width:$wthd-7 ;
+            line-height: $l-height-2;
+            border-radius: $radius-4;
+            background: $color-white-4;
+            text-align: center;
+            @include style-Text($fs-25, $color-dark-14);
+        }
+    .content h3{
+        @include style-Text($fs-25, $color-yellow-3)
+    }
+    .content p{
+        @include style-Text($fs-27, $color-dark-15)
+    }
+    }
+    .icons:hover{
+        @include backgroundColor($color-dark-14);
+        i{
+            @include backgroundColor($color-yellow-3);
+        }
+        .content h3{
+            @include Hover($color-white-3);
+        }
+        .content p{
+            @include Hover($color-white-6);
+        }
+    }
+
+}

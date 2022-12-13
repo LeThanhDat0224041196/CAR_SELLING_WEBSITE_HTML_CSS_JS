@@ -1,0 +1,14 @@
+.home{
+    padding-top: $pd-18;
+    text-align: center;
+    overflow-x: hidden;
+    h1{
+        text-transform: uppercase;
+        @include style-Text($fs-29, $color-dark-14)
+    }
+    img{
+        width: $wthd-2;
+        margin: $mg-8 $mg-0;
+    }
+    
+}
