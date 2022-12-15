@@ -1,0 +1,36 @@
+.reviews{
+    .reviews-slider{
+        padding-bottom: $pd-14;
+        .box{
+            padding: $pd-15;
+            margin: $mg-9 0;
+            text-align: center;
+            opacity: .4;
+            transform: scale(.9);
+            img{
+                width: $wthd-12;
+                height: $height-9;
+                border-radius: $radius-4;
+            }
+            .content{
+                p{
+                    padding: $pd-16 0;
+                    @include style-Text($fs-27, $color-dark-15);
+                }
+                h3{
+                    padding-bottom: $pd-22;
+                    @include style-Text($fs-6, $color-dark-14);
+                }
+                i{
+                    @include style-Text($fs-26, $color-yellow-3);
+                }
+            }
+        }
+        .swiper-slide-active{
+            opacity: 1;
+            transform: scale(1);
+            box-shadow: $shadow-1;
+            border: $bdr-color-1;
+        }
+    }
+}

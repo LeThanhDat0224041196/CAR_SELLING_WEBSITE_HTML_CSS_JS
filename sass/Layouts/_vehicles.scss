@@ -1,0 +1,70 @@
+.heading{
+    text-align: center;
+    padding-bottom: $pd-15;
+    @include style-Text($fs-30, $color-dark-14);
+    span{
+        position: relative;
+        z-index: 0;
+    }
+    span::before{
+        content: "";
+        position: absolute;
+        left: $tlr-1;
+        bottom: $tlr-5;
+        height: $height-4;
+        width: $wthd-2;
+        z-index: -1;
+        background: $color-yellow-3;
+        clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0 100%);
+    }
+}
+.vehicles{
+    .vehicles-slider{
+      padding-bottom: $pd-19; 
+      .box{
+        text-align: center;
+        // width: $wthd-9;
+        img{
+            width: $wthd-2;
+            opacity: .5;
+            transform: scale(.8);
+        }
+        .content{
+            transform: scale(0);
+            padding-top: $pd-16;
+            h3{
+                @include style-Text($fs-25, $color-dark-14)
+            }
+            .price{
+                padding: $pd-16 0;
+                @include styleText($fs-25,$fw-5,$color-yellow-3);
+                span{
+                @include styleText($fs-26,$fw-6,$color-dark-15)
+                }
+            }
+            p{
+                padding: $pd-16;
+                padding-top: $pd-21;
+                border-top: $bdr-color-1;
+                @include style-Text($fs-31, $color-dark-15);
+                span{
+                    padding: 0 $pd-22;
+                    @include style-Text($fs-27, $color-yellow-3);
+                }
+            }
+        }
+      }
+      .swiper-slide-active{
+        img{
+            opacity: 1;
+            transform: scale(1);
+        }
+        .content{
+            transform: scale(1);
+        }
+    } 
+    }
+}
+.swiper-pagination-bullet-active{
+    background-color: $color-yellow-3;
+}

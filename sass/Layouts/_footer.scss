@@ -1,0 +1,36 @@
+.footer{
+    background: $color-yellow-4;
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: $gap-2;
+        .box{
+            h3{
+                padding: $pd-16 0;
+                @include style-Text($fs-6, $color-dark-14);
+            }
+            a{
+                display: block;
+                padding: $pd-16 0;
+                @include style-Text($fs-32, $color-dark-15);
+            }
+            a i{
+                padding-right: $pd-22;
+                @include Hover($color-dark-14);
+            }
+            a:hover{
+                i{
+                    padding-right: $pd-15;
+                }
+            }
+        }
+    }
+    .credit{
+        text-align: center;
+        border-top: $bdr-color-1;
+        padding: $pd-16;
+        padding-top: $pd-26;
+        margin-top: $mg-9;
+        font-size: $fs-17;
+    }
+}

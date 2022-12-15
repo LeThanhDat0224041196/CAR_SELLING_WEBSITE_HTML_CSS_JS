@@ -1,0 +1,37 @@
+.contact{
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap-2;
+        .map{
+            flex: 1 1 42rem;
+            width: $wthd-2;
+            padding: $pd-15;
+            border: $bdr-color-1;
+            box-shadow: $shadow-1;
+        }
+        form{
+            flex: 1 1 42rem;
+            padding: $pd-15;
+            border: $bdr-color-1;
+            border-radius: $radius-3;
+            box-shadow: $shadow-1;
+            text-align: center;
+            h3{
+                @include style-Text($fs-24, $color-dark-14)
+            }
+            .box{
+                margin: $mg-11 $mg-0;
+                width: $wthd-2;
+                padding: $pd-16;
+                border: $bdr-color-1;
+                text-transform: none;
+                @include style-Text($fs-31, $color-dark-14);
+            }
+            textarea{
+                height: $height-7;
+                resize: none;
+            }
+        }
+    }
+}

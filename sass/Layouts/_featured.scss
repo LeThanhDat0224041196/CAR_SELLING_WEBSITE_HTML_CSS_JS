@@ -1,0 +1,33 @@
+.featured{
+    .featured-slider{
+        padding: $pd-16;
+        padding-bottom: $pd-23;
+        .box{
+            text-align: center;
+            padding: $pd-15;
+            box-shadow: $shadow-1;
+            border-radius: $radius-3;
+            border: $bdr-color-1;
+            img{
+                // height: $height-7;
+                width: $wthd-2;
+                padding: $pd-15;
+            }
+            h3{
+                @include style-Text($fs-6, $color-dark-14);
+            }
+            .stars{
+                padding: $pd-16 0;
+                i{
+                    @include style-Text($fs-26, $color-yellow-3);
+                }
+            }
+            .price{
+                @include style-Text($fs-25, $color-dark-14);
+            }
+        }
+        .box:hover img{
+            transform: scale(.9);
+        }
+    }
+}

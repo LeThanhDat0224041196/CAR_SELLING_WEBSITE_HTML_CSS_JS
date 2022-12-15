@@ -1,0 +1,40 @@
+.newsletter{
+    padding: $pd-24 $pd-15;
+    text-align: center;
+    background: url(../../image/letter-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    h3{
+        @include style-Text($fs-24, $color-dark-14)
+    }
+    p{
+        padding: $pd-16 0;
+        @include style-Text($fs-27, $color-dark-15);
+    }
+    form{
+        margin: $mg-8 auto;
+        max-width: $wthd-10;
+        height: $height-5;
+        display: flex;
+        border-radius: $radius-5;
+        box-shadow: $shadow-1;
+        overflow: hidden;
+        input[type="email"]{
+            width: $wthd-2;
+            height: $height-4;
+            text-transform: none;
+            padding: 0 $pd-15;
+            @include style-Text($fs-5, $color-dark-14);
+        }
+        input[type="submit"]{
+            width: $wthd-11;
+            height: $height-4;
+            cursor: pointer;
+            background: $color-yellow-4;
+            @include style-Text($fs-26, $color-dark-14);
+        }
+        input[type="submit"]:hover{
+            background: $color-yellow-3;
+        }
+    }
+}

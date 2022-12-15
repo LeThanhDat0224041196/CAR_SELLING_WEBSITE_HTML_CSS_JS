@@ -1,0 +1,41 @@
+.services{
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        gap: $gap-2;
+        .box{
+            text-align: center;
+            padding: $pd-15;
+            border-radius: $bd-3;
+            box-shadow: $shadow-1;
+            border: $bdr-color-1;
+            i{
+                height: $height-6;
+                width: $wthd-8;
+                line-height: $l-height-2;
+                background: $color-yellow-3;
+                border-radius: $radius-4;
+                margin-bottom: $mg-8;
+                @include style-Text($fs-25, $color-dark-14);
+            }
+            h3{
+                @include style-Text($fs-6, $color-dark-14);
+            }
+            p{
+                padding: $pd-16 0;
+                line-height: $l-height-3;
+                @include style-Text($fs-6, $color-dark-15);
+            }
+        }
+        .box:hover{
+            @include backgroundColor($color-dark-14);
+            h3{
+                color: $color-white-3;
+            }
+            p{
+                color: $color-white-6;
+            }
+        }   
+    }
+    
+}
