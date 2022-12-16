@@ -710,4 +710,14 @@ section {
     font-size: 3rem;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .services .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

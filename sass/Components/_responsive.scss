@@ -56,3 +56,12 @@
         font-size: $fs-24;
     }
 }
+@include responsive("xx-small-down"){
+    .services{
+        .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            gap: $gap-2;
+        }
+    }
+}
