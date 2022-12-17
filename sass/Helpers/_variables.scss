@@ -202,16 +202,22 @@ $tlr-5: 1rem;
 
 //break points
 $breakpoints: (
+    "super-ultra-large": 2561px,
+    "ultra-large": 1921px,
     "extra-large": 1200px,
     "large": 992px,
     "medium": 768px,
     "small": 576px,
     "x-small": 451px,
     "xx-small": 361px,
+    "xxx-small": 281px,
+    "super-ultra-large-down": 2560px,
+    "ultra-large-down": 1920px,
     "extra-large-down": 1199.98px,
     "large-down": 991.98px,
     "medium-down": 767.98px,
     "small-down": 575.98px,
     "x-small-down": 450px,
     "xx-small-down": 360px,
+    "xxx-small-down": 280px,
 );

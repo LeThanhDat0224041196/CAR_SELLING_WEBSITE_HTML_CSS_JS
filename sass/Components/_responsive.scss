@@ -1,4 +1,3 @@
-// Responsive
 @include responsive("large-down"){
     html{
         font-size: 55%;
@@ -48,6 +47,13 @@
         font-size: $fs-17;
     }
 }
+@include responsive("small-down"){
+    .icons-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        gap: $gap-2;
+    }
+}
 @include responsive("x-small-down"){
     html{
         font-size: 50%;
@@ -61,6 +67,20 @@
         .box-container{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            gap: $gap-2;
+        }
+    }
+}
+@include responsive("xxx-small-down"){
+    .icons-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: $gap-2;
+    }
+    .services{
+        .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
             gap: $gap-2;
         }
     }
